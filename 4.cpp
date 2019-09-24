@@ -23,9 +23,8 @@ bool isAllDigit(){
 }
 
 int main(){
-
-    cin>>str;
-
+  freopen("checker.txt","r",stdin);
+   while( cin>>str){
     int ln = strlen(str);
 
     if(isother()){
@@ -43,6 +42,6 @@ int main(){
     else{
         puts("Undefined");
     }
-
+}
     return 0;
 }
