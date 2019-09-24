@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 //	strcpy(production[0], "F=BE");
 //	strcpy(production[1], "E=bc"); 
 //	strcpy(production[2], "B=a"); 
-	 count=n;
+	count=n;
 	int kay; 
 	char done[count]; 
 	int ptr = -1; 
