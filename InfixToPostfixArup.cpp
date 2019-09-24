@@ -46,6 +46,7 @@ int priority(char a) {
 
 int main(){
     string infix;
+    freopen("infixtopost.txt","r",stdin);
     char postfix[100];
     cin>>infix;
     infix[infix.size()]=')';
