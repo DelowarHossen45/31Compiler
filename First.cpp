@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
+using namespace std;
 void findfirst(char, int, int); 
 int count, n = 0; 
 char calc_first[10][100]; 
 int m = 0; 
-char production[10][10]; 
+string production[10]; 
 char f[10], first[10]; 
 int k; 
 char ck; 
@@ -15,22 +16,27 @@ int main(int argc, char **argv)
 	int km = 0; 
 	int i, choice; 
 	char c, ch; 
-	count = 8; 
-	
+	int n;
+	freopen("14firstinput.txt","r",stdin);
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		cin>>production[i];
+	}
 	// The Input grammar 
-	strcpy(production[0], "E=TR");
-	strcpy(production[1], "R=+TR"); 
-	strcpy(production[2], "R=#"); 
-	strcpy(production[3], "T=FY"); 
-	strcpy(production[4], "Y=*FY"); 
-	strcpy(production[5], "Y=#"); 
-	strcpy(production[6], "F=(E)"); 
-	strcpy(production[7], "F=i"); 
+//	strcpy(production[0], "E=TR");
+//	strcpy(production[1], "R=+TR"); 
+//	strcpy(production[2], "R=#"); 
+//	strcpy(production[3], "T=FY"); 
+//	strcpy(production[4], "Y=*FY"); 
+//	strcpy(production[5], "Y=#"); 
+//	strcpy(production[6], "F=(E)"); 
+//	strcpy(production[7], "F=i"); 
 
 //	strcpy(production[0], "F=BE");
 //	strcpy(production[1], "E=bc"); 
 //	strcpy(production[2], "B=a"); 
-	
+	 count=n;
 	int kay; 
 	char done[count]; 
 	int ptr = -1; 
@@ -81,6 +87,7 @@ int main(int argc, char **argv)
 }
 void findfirst(char c, int q1, int q2) 
 { 
+
 	int j; 
 	if(!(isupper(c))) { 
 		first[n++] = c; 
